@@ -1,0 +1,71 @@
+@use '../../../scss/mixins';
+@use '../../../scss/reset';
+@use '../../../scss/vars';
+
+.section2 {
+    @include mixins.Flex(row, space-around, center, 0px);
+    width: 100%;
+    &-container {
+        @include mixins.Flex(column, flex-start, center, 40px);
+        &__title {
+            @include mixins.DMSans(64px, 700, 64px);
+            width: 53%;
+        }
+        .section2-wrap {
+            @include mixins.Flex(row, flex-start, center, 65px);
+            .section2-box {
+                @include mixins.Flex(row, flex-start, center, 8px);
+                &__img {
+                    border-radius: 48px;
+                }
+                &__cont {
+                    &-text {
+                        @include mixins.Poppins(12px, 400, 20px);
+                        color: vars.$no-active-color;
+                    }
+                    &-text2 {
+                        @include mixins.Poppins(14px, 500,24px);
+                    }
+                }
+            }
+        }
+        .section2-wrap2 {
+            @include mixins.Flex(column, center, center, 24px);
+            padding: 32px 60px;
+            border: 2px solid vars.$solid-color;
+            border-radius: 24px;
+            .section2-textbox {
+                @include mixins.Flex(column, center, center, 0px);
+                &__text1 {
+                    @include mixins.Poppins(16px, 500, 24px);
+                }
+                &__price {
+                    @include mixins.DMSans(48px, 700, 56px);
+                }
+            }
+            .section2-timer {
+                @include mixins.Flex(column, center, center, 16px);
+                &__text {
+                    @include mixins.Poppins(16px, 500, 24px);
+                }
+                &__time {
+                    @include mixins.Flex(row, center, center, 20px);
+                    &-cont {
+                        &-text1 {
+                            @include mixins.DMSans(32px, 700, 40px);
+                        }
+                        &-text2 {
+                            @include mixins.DMSans(16px, 500, 24px);
+                            color: vars.$no-active-color;
+                        }
+                    }
+                }
+            }
+        }
+        .section2__btn {
+            @include mixins.DMSans(16px, 700, 16px);
+            padding: 16px;
+            width: 53%;
+        }
+    }
+}
