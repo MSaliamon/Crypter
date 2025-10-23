@@ -1,0 +1,20 @@
+@use '../../../scss/mixins';
+@use '../../../scss/reset';
+@use '../../../scss/vars';
+
+.section1 {
+    @include mixins.Flex(column, center, center, 16px);
+    padding: 128px 0;
+    &__sub-title {
+        @include mixins.Poppins(12px, 700, 12px);
+        color: vars.$no-active-color;
+    }
+    &__title {
+        @include mixins.DMSans(40px, 700, 48px);
+        color: vars.$text-color;
+    }
+    &__btn {
+        @include mixins.DMSans(16px, 700, 16px);
+        padding: 16px 24px;
+    }
+}
