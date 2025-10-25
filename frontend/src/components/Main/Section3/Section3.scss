@@ -1,0 +1,108 @@
+@use '../../../scss/mixins';
+@use '../../../scss/reset';
+@use '../../../scss/vars';
+
+.section3 {
+    @include mixins.Flex(row, space-around, flex-start, 0px);
+    width: 100%;
+    padding: 128px 0;
+    &-container {
+        @include mixins.Flex(column, flex-start, flex-start, 20px);
+        .section3-box {
+            @include mixins.Flex(row, space-between, center, 0px);
+            width: 100%;
+            .section3-avatar {
+                @include mixins.Flex(row, flex-start, center, 16px);
+                &__img {
+                    border-radius: 100px;
+                }
+                &__textbox {
+                    @include mixins.Flex(column, flex-start, flex-start, 0px);
+                    &-title {
+                        @include mixins.Poppins(24px, 600, 32px);
+                    }
+                    &-text {
+                        @include mixins.Poppins(14px, 500, 24px);
+                    }
+                }
+            }
+            .section3-price {
+                @include mixins.Flex(column, flex-start, flex-start, 0px);
+                &__text {
+                    @include mixins.Poppins(12px, 400, 20px);
+                    color: vars.$no-active-color;
+                }
+                &__wrap {
+                    border: 4px solid vars.$border-color;
+                    border-radius: 4px;
+                    padding: 8px;
+                    &-text {
+                        @include mixins.Poppins(12px, 700, 12px);
+                        color: vars.$border-color;
+                    }
+                }
+            }
+        }
+    }
+    &-container2 {
+        @include mixins.Flex(row, flex-start, flex-start, 48px);
+        .section3-box {
+            @include mixins.Flex(column, flex-start, flex-start, 32px);
+            &__cont {
+                @include mixins.Flex(row, center, center, 24px);
+                &-info {
+                    @include mixins.Flex(column, flex-start, flex-start, 8px);
+                    &-text {
+                        @include mixins.Poppins(16px, 500, 24px);
+                    }
+                    &-avatar {
+                        @include mixins.Flex(row, center, center, 11px);
+                        &-wrap {
+                            border: 4px solid vars.$border-color;
+                            border-radius: 4px;
+                            padding: 8px;
+                        }
+                        &-text {
+                            @include mixins.Poppins(12px, 700, 12px);
+                            color: vars.$border-color;
+                        }
+                        &-count {
+                            @include mixins.Poppins(14px, 400, 24px);
+                            color: vars.$no-active-color;
+                        }
+                    }
+                    &-btn {
+                        @include mixins.DMSans(14px, 700, 16px);
+                        padding: 8px 12px;
+                    }
+                }
+            }
+        }
+        .section3-box2 {
+            @include mixins.Flex(column, flex-start, flex-start, 12px);
+            &__text {
+                @include mixins.Poppins(12px, 600, 20px);
+                color: vars.$no-active-color;
+            }
+            &__avatar {
+                @include mixins.Flex(row, center, center, 16px);
+                padding: 24px 0px;
+                border-bottom: 1px solid vars.$no-active-color;
+                width: 100%;
+                &-textbox {
+                    @include mixins.Flex(column, flex-start, flex-start, 0px);
+                    &-text {
+                        @include mixins.Poppins(14px,500, 24px);
+                    }
+                    &-price {
+                        @include mixins.Poppins(12px, 600, 20px);
+                    }
+                }
+            }
+            &__btn {
+                @include mixins.DMSans(14px, 700, 16px);
+                padding: 12px 16px;
+            }
+        }
+    }
+}
