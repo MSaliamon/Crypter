@@ -10,7 +10,7 @@ function Section4() {
     <section className="section4">
       <div className="section4-container">
         <h2 className="section4-container__title">Popular</h2>
-        <select name="" id="" className="section4-container__select">
+        <select name="date" id="1" className="section4-container__select">
           <option value="Today">Today</option>
           <option value="Month">Month</option>
           <option value="Year">Year</option>

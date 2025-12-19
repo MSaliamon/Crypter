@@ -101,7 +101,7 @@ function Section3() {
                         <p className="section3-box2__avatar-textbox-price">2.456 ETH</p>
                     </div>
                 </div>
-                <button className="section3-box2__btn button2">Discover more <img src="" alt="" className="section3-box2__btn-img" /></button>
+                <button className="section3-box2__btn button2">Discover more</button>
             </div>
         </div>
     </section>

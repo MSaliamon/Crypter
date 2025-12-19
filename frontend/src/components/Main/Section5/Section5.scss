@@ -1,0 +1,53 @@
+@use '../../../scss/mixins';
+@use '../../../scss/reset';
+@use '../../../scss/vars';
+
+.section5 {
+    @include mixins.Flex(column, flex-start, flex-start, 64px);
+    padding: 100px 67px;
+    width: 100%;
+    &__title {
+        @include mixins.DMSans(40px, 700, 48px);
+    }
+    &-container {
+        @include mixins.Flex(row, space-around, center, 0px);
+        width: 100%;
+        .section5-box {
+            @include mixins.Flex(column, center, center, 21px);
+            &__cont {
+                @include mixins.Flex(row, space-between, center, 0px);
+                width: 100%;
+                &-text {
+                    @include mixins.DMSans(18px, 700, 32px);
+                }
+                &-price {
+                    padding: 8px 6px;
+                    border-radius: 4px;
+                    border: 2px solid vars.$border-color;
+                    color: vars.$border-color;
+                    &-text {
+                        @include mixins.Poppins(12px, 700, 12px);
+                        color: vars.$border-color;
+                    }
+                }
+                &-imgs {
+                    &-img {
+                        margin-left: -10px
+                    }
+                }
+                &-text2 {
+                    @include mixins.Poppins(14px, 500, 24px);
+                    color: vars.$text-color;
+                }
+                &-button {
+                    @include mixins.DMSans(14px, 700, 16px);
+                    color: vars.$no-active-color;
+                }
+            }
+            &__text {
+                @include mixins.Poppins(16px, 600, 20px);
+                color: vars.$text-color;
+            }
+        }
+    }
+}

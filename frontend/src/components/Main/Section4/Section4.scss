@@ -26,9 +26,10 @@
             @include mixins.Flex(row, center, center, 64px);
             .section4-box {
                 @include mixins.Flex(column, center, center, 16px);
-                padding: 97px 63px 63px 63px;
+                padding: 63px 50px 27px;
                 background-color: vars.$solid-color;
                 border-radius: 16px;
+                width: 227px;
                 &__name {
                     @include mixins.Poppins(14px, 500, 24px);
                 }
