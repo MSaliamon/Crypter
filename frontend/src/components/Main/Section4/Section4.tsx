@@ -24,6 +24,11 @@ function Section4() {
             <p className="section4-box__name">Edd Harris</p>
             <p className="section4-box__price">2.456 ETH</p>
           </div>
+           <div className="section4-box">
+            <img src={Edd} alt="Edd" className="section4-box__img" />
+            <p className="section4-box__name">Edd Harrow</p>
+            <p className="section4-box__price">2.456 ETH</p>
+          </div>
           <div className="section4-box">
             <img src={Marlee} alt="Marlee" className="section4-box__img" />
             <p className="section4-box__name">Marlee Kuphal</p>

@@ -3,7 +3,7 @@
 @use '../../../scss/vars';
 
 .section2 {
-    @include mixins.Flex(row, space-around, center, 0px);
+    @include mixins.Flex(row, space-between, center, 0px);
     width: 100%;
     &-container {
         @include mixins.Flex(column, flex-start, center, 40px);
