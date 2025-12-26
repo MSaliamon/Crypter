@@ -23,13 +23,13 @@
     &-container2 {
         @include mixins.Flex(row, center, center, 70px);
         .section4-wrap {
-            @include mixins.Flex(row, center, center, 64px);
+            @include mixins.Flex(row, center, center, 32px);
             .section4-box {
                 @include mixins.Flex(column, center, center, 16px);
-                padding: 63px 50px 27px;
+                padding: 63px 0px 29px;
                 background-color: vars.$solid-color;
                 border-radius: 16px;
-                width: 227px;
+                width: 183px;
                 &__name {
                     @include mixins.Poppins(14px, 500, 24px);
                 }
