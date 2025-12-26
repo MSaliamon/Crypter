@@ -8,7 +8,6 @@
     &-container {
         @include mixins.Flex(row, space-between, center, 0px);
         width: 100%;
-        padding: 0px 70px;
         &__title {
             @include mixins.DMSans(40px, 700, 48px);
         }
